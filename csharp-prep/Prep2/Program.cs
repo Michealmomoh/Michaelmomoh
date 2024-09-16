@@ -31,7 +31,7 @@ class Program
     else if (grade_percent < 60)
     {
         letter = "F";
-        Console.WriteLine($"Your grade is: {letter}");
+        Console.WriteLine($"Your grades is: {letter}");
     }
     if (grade_percent >=70){
         Console.WriteLine("You passed!");
