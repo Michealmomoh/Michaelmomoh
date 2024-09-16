@@ -11,7 +11,7 @@ class Program
         int input;
         do
         {
-            Console.Write("Enter number: ");
+            Console.Write("Enter numbers: ");
             input = Convert.ToInt32(Console.ReadLine());
             if (input != 0)
             {
