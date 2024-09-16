@@ -13,7 +13,7 @@ class Program
         
 
     if (userGuess < guess_number){
-        Console.WriteLine("GUESS HIGHER");
+        Console.WriteLine("guss HIGHER");
     }
     else if(userGuess > guess_number){
         Console.WriteLine("guess lower");
