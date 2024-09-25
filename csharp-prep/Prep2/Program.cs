@@ -16,7 +16,7 @@ class Program
         }
         else if (percent >= 80)
         {
-            letter = "B";
+            letter = "B ";
         }
         else if (percent >= 70)
         {
