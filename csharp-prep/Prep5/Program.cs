@@ -1,62 +1,48 @@
 using System;
-using System.Globalization;
 
 class Program
 {
     static void Main(string[] args)
     {
-        
-        DisplayWelcome();
+        DisplayWelcomeMessage();
 
-        
         string userName = PromptUserName();
-
-        
         int userNumber = PromptUserNumber();
 
-        
         int squaredNumber = SquareNumber(userNumber);
 
-        
         DisplayResult(userName, squaredNumber);
     }
 
-    
-    static void DisplayWelcome()
+    static void DisplayWelcomeMessage()
     {
         Console.WriteLine("Welcome to the program!");
     }
 
-    
     static string PromptUserName()
     {
         Console.Write("Please enter your name: ");
-        string PromptUserName = Console.ReadLine();
-        Console.WriteLine(PromptUserName);
-        return PromptUserName;
+        string name = Console.ReadLine();
+
+        return name;
     }
 
-    
     static int PromptUserNumber()
     {
-        Console.Write("Please enter your favorite numbers: ");
+        Console.Write("Please enter your favorite number: ");
         int number = int.Parse(Console.ReadLine());
 
         return number;
     }
 
-    
     static int SquareNumber(int number)
     {
         int square = number * number;
         return square;
     }
 
-    
-    static void DisplayResult(string PromptUserName, int SquareNumber)
+    static void DisplayResult(string name, int square)
     {
-        Console.WriteLine($"{PromptUserName}, the square of your number is {SquareNumber}");
-        
+        Console.WriteLine($"{name}, the square of your number is {square}");
     }
-    
 }
